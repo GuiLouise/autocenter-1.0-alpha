@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-shadow: black  0 0 1px;
+    
+}
+
+body{
+    box-sizing: border-box;
+    height: auto;
+    background: rgb(51, 48, 48);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+
+.nav{
+    height:60px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    border-bottom: 1px solid orange;
+}
+
+.nav-img{
+    margin-left: 25px;
+}
+
+.nav-img img{
+    width: 45px;
+    filter: drop-shadow(black  0 0 5px);
+}
+
+.nav-ul{
+    justify-items: right;
+}
+
+.nav-ul ul{
+    text-align: center;
+    display: flex;
+}
+
+.nav-ul li, .nav-ul a{
+    margin: auto 15px;
+    font-size: 20px;
+    font-weight: 200;
+    color: orange;
+
+}
+
+.nav-ul li:hover{
+    color: rgb(187, 121, 0);
+}
+
+/*-------------------------------------------*/
+
+.banner{
+    background-image: url(../sources/banner.webp);
+    background-size: cover;
+    background-position: bottom;
+    height: 25vh;
+    width: 100%;
+    margin-top: 60px; 
+    border-radius: 0 0 20% 20%;
+    border-bottom: 3px orange solid;
+    overflow: hidden;
+}
+
+.banner-txt{    
+    position: relative;
+    left: 100px;
+    top: 15px;
+    
+}
+
+.banner-txt h1{
+    font-family: "Montserrat Underline", sans-serif;
+    color: orange;
+    font-size: 70px;
+    text-shadow: black  2px 2px 1px;
+}
+
+.banner-txt span{
+    color: rgb(255, 255, 255);
+    text-shadow: black  1px 2px 1px;
+}
+
+.banner-txt h2{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: black  1px 2px 1px;
+    color: rgb(255, 255, 255);
+    width: 550px;
+    height: 27px;
+    background-color: orange;
+    border-radius: 10px;
+    box-shadow: black 2px 2px 5px;
+}
+
+.empresa-geral{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.empresa h1{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+.empresa-txt{
+    margin: 30px auto;
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.empresa-txt h2{
+    font-weight: 900;
+    color: orange;
+    font-size: 25px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.empresa-txt h2 span{
+    color: white;
+}
+
+.empresa-txt p{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: 100;
+    width: 90%;
+    color: white;
+    font-style: italic;
+}
+
+.empresa-txt p span{
+    color: white;
+}
+
+.empresa-img{
+    text-align: center;
+    align-content   : center;
+}
+
+.empresa-img img{
+    border: 1px solid orange;
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: black 2px 2px 5px;
+}
+
+.empresa-img p{
+    font-size: 12px;
+    color: gray;
+}
+
+
+/*-------------------------------------------*/
+
+.servicos{
+    margin: 0 auto;
+    align-content: center;
+    width: 100%;
+    height: auto;  
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    padding-top: 15px;
+}
+
+.services{
+    display: none;
+}
+
+.services.active{
+    display: block;
+}
+
+
+.txt-serv h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+.serv{
+    margin: 50px auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 30vw auto;
+    height: 200px;
+    width: 100vw;
+}
+
+.serv-img{
+    width: 30vw;
+    text-align: center;
+    max-height: 250px;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.serv-img img{
+    height: 200px;
+    border-radius: 30px;
+    box-shadow: black 0 0 5px;
+    border: 2px solid orange;
+}
+
+.serv-info{
+    width: 100%;
+    text-align: center;
+    max-height: 250px;
+    justify-items: left;
+    align-content: center;
+}
+
+.serv-info h1{
+    color: orange;
+    text-align: left;
+    justify-items: left;
+    margin-bottom: 25px;
+}
+
+.serv-info p{
+    color: white; 
+    margin-bottom: 45px;
+    width: 80%;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.serv-info button{
+    background-color: rgb(255, 208, 0);
+    border: 1px solid orange;
+    color: black;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight:bold;
+}
+
+.serv-info button:hover{
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.btn-radios{
+    width: 100%;
+    height: 55px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-radios button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px orange solid;
+    background-color: orange;
+    margin: 15px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btn-radios button:hover{
+    background-color: orangered;
+    transform: scale(1.5);
+}
+
+
+
+/*-------------------------------------------*/
+
+.orcamento{
+    text-align: center;
+    margin: 20px auto;
+    align-items: center;
+
+
+}
+
+.orcamento h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    color: orange;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.msgin h2{
+    color: white;
+    font-weight: 100;
+
+}
+
+.form{
+    margin: 20px auto;
+    width: 50%; 
+    height: 420px;
+    display: inline-block;
+    text-align: center;
+    justify-items: center;
+}
+
+
+.frm{
+    display: grid;
+    width: 80%;
+    height: 70px;
+    margin: 15px auto;
+    text-align: left;
+
+}
+
+.frm h3{
+
+    font-size: 20px;
+    font-weight: 100;
+
+}
+
+.frm h3 span{
+    color: red;
+}
+
+.frm input{
+    border-radius: 15px;
+    border: 2px solid orange;
+    outline: 0;
+    padding-left: 8px;
+    transition: .5s;
+}
+
+.frm input:focus{
+    background: orange;
+}
+
+.form-mensagem{
+    margin-bottom: 100px;
+}
+
+.form-mensagem h3{
+    margin-bottom: 20px;
+}
+
+.form-mensagem textarea{
+    height: 100px;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1px solid orange;
+    outline: 0;
+    transition: .5s;
+}
+
+.form-mensagem textarea:focus{
+    background: orange;
+}
+
+
+.form button{
+    background-color: rgb(255, 208, 0);
+    border: 1px solid orange;
+    color: black;
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: bold;
+}
+
+.form button:hover{
+    background-color: orange;
+    border: 1px solid black;
+}
+
+
+/*---------------*/
+
+.msgout{
+    height: 250px;
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.msgout h2{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.msgout h3{
+    font-size: 18px;
+    text-shadow: black  0 0 1px;
+    margin-bottom: 50px;
+}
+
+.ctt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.ctt button{
+    width: 170px;
+    height: 50px;   
+    border-radius: 30px;
+    background: white;
+    border: 1px solid orange;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    transition: .5s;
+}
+
+.ctt button:hover{
+    background-color: orange;
+}
+
+.ctt button img{
+    width: 30px;
+
+}
+
+.ctt-div{
+    text-align: center;
+    color: orange;
+    text-shadow: black  0 0 1px;
+}
+
+.ctt-div h4{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------------------*/
+
+footer{
+    text-align: center;
+    align-content: center;
+    height: 130px;
+    width: 100vw;
+    background-color: black;
+    color: orange;
+    font-weight: 100;
+}
+
+footer h3{
+    color: white;
+    margin-bottom: 15px;
+    font-weight: 100;
+}
+
+footer a{
+    margin-top: 15px;
+    color: white;
+    font-weight: 100;
+}
