@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     text-shadow: black  0 0 1px;
-    
+    font-family: "Noto Sans", serif;
+    font-weight: 900;
 }
 
 body{
@@ -386,7 +389,7 @@ li{
     font-family: inherit;
     font-size: 15px;
     border-radius: 15px;
-    border: 1px solid orange;
+    border: 2px solid orange;
     outline: 0;
     transition: .5s;
 }
